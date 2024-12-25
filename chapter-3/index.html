@@ -1,0 +1,172 @@
+<!-- CHAPTER 3: CREATING A PAGE LAYOUT:
+
+When we use the right tag in right place,it results in better page layout, better
+indexing by search engines and better user experience.
+We use the following tag to get the job done.
+
+inside the main tag we insert the following tags:
+<main> ---- The main opening tag
+<section> --- A page section 
+<article> --- A self contained content
+<aside> --- Content aside from the content(eg Ass etc)
+</main> --- The main closing tag
+
+Creating a page like this is not necessary but it creates a readable & structural 
+layout 
+Also they are useful for SEO.
+
+Link attributes:
+<a herf="/contact>"contact us </a> --- contact page opens in some tab
+<a herf="/contact"target="_blank>"contact us </a> ---- open in new tab
+
+We can put any content inside an anchor tag(images,headings,etc are all allowed)
+
+If the page is inside a directory, we need to make sure that we link to the correct
+page.  ----same applies to img tag as well
+
+We can add links to images like this 
+<a herf="/about"><img src='a. spg' width="120"> </a> --- Hieght will be set automatically
+
+
+THE Dive tag:
+dive tag is often used as a container for other elements dive is a block level 
+element---- Always takes ful width
+
+
+The Span tag:
+span is an inline containner--- Takes as much width as necessary
+
+
+
+Block Elements:
+
+<address><article><aside><blockquote><canvas><dd><div><dl><dt><fieldset>
+<figcaption><figure><footer><form><h1>-<h6><header><hr><li><main><nav>
+<noscript><ol><p><pre><section><table><tfoot><ul><video></video>
+
+Block elements typically take up the full width of their container and start on a new line.
+
+1.<address>: Represents contact information for its nearest article or document.
+2.<article>: Defines independent, self-contained content, like a blog post or
+             news article.
+3.<aside>: Contains content indirectly related to the main content, like sidebars or callouts.
+4.<blockquote>: For long quotes, usually displayed as indented text.
+5.<canvas>: A container for graphics (e.g., for rendering images, animations, or charts with JavaScript).
+6.<dd>: Used inside a description list (<dl>) to define a description for a term.
+7.<div>: A generic container for grouping content or applying CSS styles.
+8.<dl>: A container for a description list (terms and definitions).
+9.<dt>: Represents a term in a description list.
+10.<fieldset>: Groups related elements in a form with an optional legend.
+11.<figcaption>: Provides a caption or description for a <figure>.
+12.<figure>: Groups media content and its caption, like images and captions.
+13.<footer>: Represents the footer section of a document or section, often for copyright or links.
+14.<form>: A container for user input controls like text fields, checkboxes, and buttons.
+15.<h1>–<h6>: Represent headings, with <h1> being the most important and <h6> the least.
+16.<header>: Represents the header of a document or section, often including navigation links.
+17.<hr>: A horizontal line, often used to separate content.
+18.<li>: Represents a list item in ordered (<ol>) or unordered (<ul>) lists.
+19.<main>: Indicates the main content of a document.
+20.<nav>: Contains navigation links.
+21.<noscript>: Displays content if JavaScript is disabled in the browser.
+22.<ol>: An ordered (numbered) list.
+23.<p>: Represents a paragraph.
+24.<pre>: Preserves whitespace and displays text in a fixed-width font.
+25.<section>: Represents a thematic grouping of content, often with a heading.
+26.<table>: Defines a table.
+27.<tfoot>: Represents the footer of a table.
+28.<ul>: An unordered (bulleted) list.
+29.<video>: Embeds a video in the document.
+
+Inline Elements:
+
+<a><abbr><acronym><b><bdo><big><br><button><cite><code><dfn><em><i><img>
+<input><kbd><label><map><object><output><q><samp><script><select><small>
+<span><strong><sub><sup><textarea><time><tt><var>
+
+Inline elements do not start on a new line and only take up as much width as their content.
+
+1.<a>: Represents a hyperlink to navigate to another page or section.
+2.<abbr>: Defines an abbreviation or acronym, with an optional title for explanation.
+3.<acronym>: Deprecated. Similar to <abbr>.
+4.<b>: Displays text in bold for emphasis.
+5.<bdo>: Overrides the text direction (e.g., left-to-right or right-to-left).
+6.<big>: Increases the font size (deprecated).
+7.<br>: Inserts a line break.
+8.<button>: Represents a clickable button.
+9.<cite>: Defines the title of a creative work (e.g., a book or film title).
+10.<code>: Represents a snippet of computer code.
+11.<dfn>: Represents the definition of a term.
+12.<em>: Indicates emphasis, often displayed in italics.
+13.<i>: Italicizes text, often for foreign words or technical terms.
+14.<img>: Embeds an image in the document.
+15.<input>: Accepts user input, such as text, checkboxes, or radio buttons.
+16.<kbd>: Represents keyboard input, often styled in a monospace font.
+17.<label>: Associates text with a form element like <input>.
+18.<map>: Defines an image map, specifying clickable areas within an image.
+19.<object>: Embeds multimedia like videos or Flash files.
+20.<output>: Displays the result of a calculation or user action.
+21.<q>: Represents short quotations, typically enclosed in quotation marks.
+22.<samp>: Represents sample output from a program or application.
+23.<script>: Embeds JavaScript code or links to an external script file.
+24.<select>: Creates a dropdown list.
+25.<small>: Decreases the font size, often for fine print.
+26.<span>: A generic container for applying CSS or grouping text inline.
+27.<strong>: Represents strong importance, often displayed in bold.
+28.<sub>: Displays subscript text.
+29.<sup>: Displays superscript text.
+30.<textarea>: Allows users to enter multiline text input.
+31.<time>: Represents either a specific point in time or a duration.
+32.<tt>: Displays text in a monospace font (deprecated).
+33.<var>: Represents a variable in programming or math.
+
+These elements form the building blocks of any HTML document. Let me know if you'd like further clarification or examples for any specific element!
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 03</title>
+</head>
+<body>
+  <header>
+     <nav>
+        Home
+        About
+     </nav>
+  </header> 
+   <main>
+      <!-- <p>This is main content</p> -->
+      <section>
+         <a href="http://codewithharry.com" target="_main">Harry's website</a>
+         <!-- targe="main" to written this help in directs the linked content to load
+              in an iframe or frame with the name="main". if no such frame exists,it
+              has no affect. -->
+      </section>
+      <section>
+         <!-- div is an example of block element -->
+         <div>     
+            <h1>Why love HTML</h1>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae molestiae sint nihil praesentium deleniti non? Ipsum consequatur architecto odit est itaque, veritatis repellendus sit obcaecati et ratione pariatur voluptatibus, eius earum voluptatum quo. Odit vel a esse nam mollitia corporis consectetur doloribus temporibus quod ut.</p>
+         </div>
+         <div>
+            <h1>Why use bootstrap</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero in quia inventore ex!</p>
+         </div>
+         <!-- span is an example of inline element -->
+          <span>
+            I am a span tag
+          </span>
+          <span>
+            I am another span
+          </span>
+      </section>
+   </main>
+   <footer>
+       This is footer
+   </footer>
+  
+</body>
+</html>
